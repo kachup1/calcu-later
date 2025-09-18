@@ -2,7 +2,22 @@ body{
     background-color:#918B8B;;
 }
 
+.Header{
+    display:flex;
+    justify-content: center;
+
+}
+.RobotIcon{
+    width: clamp(30px,8vw,80px);
+    height: auto;
+}
+
 .Calc-Title{
     font-size: clamp(1rem,10vw,2.5rem); /*Minimum font size, preferred size with viewport width, max font size(never gets bigger than this)*/
     font-family: Kode Mono;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
 }

@@ -17,10 +17,22 @@ function Calculater() {
 
     <div className='SubHeader'>
       <div className='From-Section'>
-
+        <label htmlFor='From'>FROM:</label>
+        <select id='From' name='From'>
+          <option value="octal">Octal (OCT)</option>
+          <option value="decimal">Decimal (DEC)</option>
+          <option value="hexadecimal">Hexadecimal (HEX)</option>
+          <option value="binary">Binary (BIN)</option>
+        </select>
       </div>
       <div className='To-Section'>
-        
+         <label htmlFor='To'>TO:</label>
+        <select id='To' name='To'>
+          <option value="octal">Octal (OCT)</option>
+          <option value="decimal">Decimal (DEC)</option>
+          <option value="hexadecimal">Hexadecimal (HEX)</option>
+          <option value="binary">Binary (BIN)</option>
+        </select>
       </div>
     </div>
     </div>

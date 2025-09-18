@@ -1,5 +1,6 @@
 body{
     background-color:#918B8B;;
+     
 }
 
 .Header{
@@ -19,5 +20,37 @@ body{
     flex-direction: column;
     justify-content: center;
 
+
+}
+
+/*Subheader:*/
+
+/*clamp(MIN,PREFERRED,MAX)
+ex: width:clamp(600px,90vw,1000px);
+90vw-> 90% of viewport width
+*/
+
+.SubHeader{
+    display: flex;
+    justify-content: space-around;
+    justify-self: center; /*This made the subheader be in the center of the window*/
+    background-color: #E06C13;
+    width: clamp(300px,90vw,1000px);
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid black;
+    padding: 10px;
+    
+    
+}
+
+.To-Section,.From-Section{
+    font-family: Kode Mono,monospace;
+    
+}
+
+select{
+    font-family: Kode Mono;
+    font-weight:bold;
 
 }

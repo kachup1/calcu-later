@@ -44,13 +44,30 @@ ex: width:clamp(600px,90vw,1000px);
     
 }
 
+/*Dropdown menu, if we want it to be rounded then we will have to use div instead*/
+
 .To-Section,.From-Section{
     font-family: Kode Mono,monospace;
     
 }
 
 select{
-    font-family: Kode Mono;
+    font-family: Kode Mono,monospace;
+    text-align: center; /*Allows the texts on the drop down menu to be centered*/
     font-weight:bold;
+    border-radius: 10px;
+
+}
+
+
+/*This is the main section- calculator*/
+.Calc-Section{
+    background-color: #0C1F62;
+    display: flex;
+    justify-self: center;
+    transform: translateY(20px);
+    width: clamp(100px,90vw,1000px);
+    height: clamp(50px,90vw, 600px);
+    border-radius:20px;
 
 }

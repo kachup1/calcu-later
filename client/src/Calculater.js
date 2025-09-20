@@ -35,6 +35,13 @@ function Calculater() {
         </select>
       </div>
     </div>
+
+    <div className='Calc-Section'>
+
+      
+    </div>
+
+
     </div>
   );
 }

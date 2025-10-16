@@ -16,6 +16,7 @@ body{
 .Calc-Title{
     font-size: clamp(1rem,10vw,2.5rem); /*Minimum font size, preferred size with viewport width, max font size(never gets bigger than this)*/
     font-family: Kode Mono;
+    color: #0C1F62;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,17 +71,17 @@ select{
     height: clamp(50px,90vw, 600px);
     border-radius:20px;
 
+    
+
+
 }
 
 .Calc-Options{
     background-color: #BFBDBD;
-    justify-self: center;
     display: flex;
-    transform: translate(50px,50px);
+    margin: 30px;
     width: clamp(200px,27vw,280px);
-   
     border-radius: 20px;
-
 
 }
 

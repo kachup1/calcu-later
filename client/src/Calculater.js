@@ -37,8 +37,31 @@ function Calculater() {
     </div>
 
     <div className='Calc-Section'>
-
       
+      <div className='Calc-Options'>
+        <div className='Hex-Option'>
+
+        </div>
+        <div className='Dec-Option'>
+
+        </div>
+        <div className='Oct-Option'>
+          </div>
+        <div className='Bin-Option'>
+          </div>
+
+      </div>
+
+      <div className='Calc-Display'>
+
+      </div>
+       
+      <div className='Calc-Button-Row'>
+
+      </div>
+      <div className='Calc-Buttons-Section'>
+
+      </div>
     </div>
 
 

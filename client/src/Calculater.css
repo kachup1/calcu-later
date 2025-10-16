@@ -71,3 +71,28 @@ select{
     border-radius:20px;
 
 }
+
+.Calc-Options{
+    background-color: #BFBDBD;
+    justify-self: center;
+    display: flex;
+    transform: translate(50px,50px);
+    width: clamp(200px,27vw,280px);
+   
+    border-radius: 20px;
+
+
+}
+
+/*.Calc-Display{
+    
+}*/
+
+.Calc-Button-Row{
+    background-color: #AA0808;
+
+}
+
+.Calc-Buttons-Section{
+    background-color: #BFBDBD;
+}

@@ -39,16 +39,29 @@ function Calculater() {
     <div className='Calc-Section'>
       
       <div className='Calc-Options'>
+
         <div className='Hex-Option'>
-
+          <div className='Option-Title'>Hexadecimal (HEX):</div>
+          <div className='Hex-Value'>1205</div>
         </div>
+
+
         <div className='Dec-Option'>
-
+          <div className='Option-Title'>Decimal (DEC):</div>
+          <div className='Dec-Value'>10</div>
         </div>
+
+
         <div className='Oct-Option'>
-          </div>
+          <div className='Option-Title'>Octal (OCT):</div>
+          <div className='Oct-Value'>8</div>
+        </div>
+
+    
         <div className='Bin-Option'>
-          </div>
+          <div className='Option-Title'>Binary (BIN):</div>
+          <div className='Bin-Value'>1010101</div>
+        </div>
 
       </div>
 

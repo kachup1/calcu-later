@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Kode Mono";
+  src: url("/public/Fonts/KodeMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 body{
     background-color:#918B8B;;
      
@@ -77,68 +85,37 @@ select{
     margin: 30px;
     width: clamp(200px,27vw,280px);
     border-radius: 20px;
-    display:grid;
-    grid-auto-rows: minmax(80px, auto);
-    gap: 12px;
-    padding: 16px; /*This adds padding to the grey container, meaning it gives more grey container to make it seem bigger */
-    overflow: hidden;
 }
 
-
-.Hex-Option,.Dec-Option,.Bin-Option,.Oct-Option{
-    background-color: white;
-    border-radius:10px ;
-    width: 95%;          /* I changed this so the options can be within the calc-options sectoin */
-    max-width: 100%;      /* never exceed container */
-    min-height: 70px;     /* keep a nice minimum height */
-    position: relative;
-}
-.Option-Title{
-    font-family: Kode Mono,monospace;
-    font-weight: bold;
-    font-size: clamp(0.8rem,10vw,1.2rem);
-    text-align: center;
-    white-space: nowrap; /*prevents the text from breaking into multiple lines*/
-
-    /*This will  create the line that separates the Title and the value*/
-    border-bottom: 2px solid black;
-    padding-bottom: 4px; /*This adds space between the line and the title*/
-    margin-bottom: 6px; /*This adds space between the line and the value*/
+.Calc-Right-Side{
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    width: 70%;
 }
 
-.Hex-Value,.Dec-Value,.Oct-Value,.Bin-Value{
-    font-family: Kode Mono,monospace;
-   font-size: clamp(.9rem,10vw,1.5rem);
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
+.Calc-Top-Box{
+    display:flex;                
+    align-items:center; 
+    background-color: #BFBDBD;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: clamp(3px,140px,170px);
+    border-radius: 10px;
+    border: 5px solid black;
 }
 
-.Hex-Option{
-    background-color: #4369F1;
-
+.Calculation-Display{
+    margin-left:auto;
+    text-align: right;
+    background: transparent;
+    border: none;
+    font-family: "Orbitron", monospace;
+    font-size: 4rem;
 }
 
-.Dec-Option{
-    background-color: #AA0808;
-
-}
-.Oct-Option{
-    background-color: #A6EB05;
-
-}
-.Bin-Option{
-    background-color: #EF9309;
-
-}
-
-
-
-/*.Calc-Display{
-    
-}*/
-
-.Calc-Button-Row{
+.Calc-Middle-Options{
     background-color: #AA0808;
     display: flex;
     margin-right: 20px;
@@ -153,7 +130,7 @@ select{
     color: white;
     background: transparent;
     border: none;
-    font-family: "Orbitron", monospace;
+    font-family: Kode Mono, monospace;
     font-size: 1rem;
     cursor: pointer;
     transition: transform 0.1s ease, color 0.1s ease;

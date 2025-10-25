@@ -123,10 +123,15 @@ select{
 
 .Hex-Value,.Dec-Value,.Oct-Value,.Bin-Value{
     font-family: Kode Mono,monospace;
-   font-size: clamp(.9rem,10vw,1.5rem);
+   font-size: clamp(1rem,3vw,2rem);
     position: absolute;
     right: 5px;
     bottom: 5px;
+    /*I added this so it would resize if it overflows*/
+    white-space: normal;
+    overflow-wrap: anywhere;
+    line-height: 1;
+
 }
 
 .Hex-Option{

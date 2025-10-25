@@ -73,7 +73,6 @@ select{
 }
 
 .Calc-Options{
- 
     background-color: #BFBDBD;
     margin: 30px;
     width: clamp(200px,27vw,280px);

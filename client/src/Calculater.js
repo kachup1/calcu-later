@@ -7,7 +7,7 @@ function Calculater() {
       <div className='Header'>
         <div className='Logo'>
           {/*Robot logo */}
-          <img src="/RobotIcon2.png" alt="Robot Icon" className="RobotIcon" />
+          <img src="Sources/RobotIcon2.png" alt="Robot Icon" className="RobotIcon" />
 
         </div>
         <div className='Calc-Title'>
@@ -52,19 +52,30 @@ function Calculater() {
 
       </div>
 
-      <div className='Calc-Display'>
-
+      <div className='Calc-Right-Side'>
+        <div className='Calc-Top-Box'>
+          <div className='Calculation-Display'>
+            <div>0</div>
+          </div>
+        </div>
+        <div className='Calc-Middle-Options'>
+          <button className="key">CE</button>
+          <button className="key">C</button>
+          <button className="key">(</button>
+          <button className="key">)</button>
+          <button className="key">AND</button>
+          <button className="key">OR</button>
+          <button className="key">NOT</button>
+        </div>
+        <div className='Calc-Buttons-Section'>
+        </div>
       </div>
+
+
+     
        
-      <div className='Calc-Button-Row'>
 
-      </div>
-      <div className='Calc-Buttons-Section'>
-
-      </div>
     </div>
-
-
     </div>
   );
 }

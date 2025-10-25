@@ -19,6 +19,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #0C1F62;
 
 
 }
@@ -69,30 +70,77 @@ select{
     width: clamp(100px,90vw,1000px);
     height: clamp(50px,90vw, 600px);
     border-radius:20px;
+    position: relative;
 
 }
 
 .Calc-Options{
     background-color: #BFBDBD;
-    justify-self: center;
     display: flex;
-    transform: translate(50px,50px);
+    margin: 20px;
     width: clamp(200px,27vw,280px);
-   
     border-radius: 20px;
-
-
 }
 
-/*.Calc-Display{
-    
-}*/
+.Calc-Right-Side{
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    width: 70%;
+}
 
-.Calc-Button-Row{
+.Calc-Top-Box{
+    display:flex;                
+    align-items:center; 
+    background-color: #BFBDBD;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: clamp(3px,140px,170px);
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+.Calculation-Display{
+    margin-left:auto;
+    text-align: right;
+    background: transparent;
+    border: none;
+    font-family: "Orbitron", monospace;
+    font-size: 4rem;
+}
+
+.Calc-Middle-Options{
     background-color: #AA0808;
+    display: flex;
+    margin-right: 20px;
+    height: clamp(3px,60px,170px);
+    border-radius: 10px;
+    border: 5px solid black;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+.key {
+    color: white;
+    background: transparent;
+    border: none;
+    font-family: "Orbitron", monospace;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.1s ease, color 0.1s ease;
 }
 
 .Calc-Buttons-Section{
     background-color: #BFBDBD;
+    display: flex;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: clamp(3px,460px,970px);
+    border-radius: 10px;
+    border: 5px solid black;
+
 }
+/*.Calc-Display{
+    
+}*/

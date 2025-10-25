@@ -70,6 +70,9 @@ function Calculater() {
           <div className='Calculation-Display'>
             <div>0</div>
           </div>
+            <button className='Backspace-Button'>
+              <img src="/Sources/backspace_logo.svg" alt="Backspace" className="Backspace-Icon" />
+            </button>
         </div>
         <div className='Calc-Middle-Options'>
           <button className="key">CE</button>

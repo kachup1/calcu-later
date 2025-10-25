@@ -107,7 +107,6 @@ select{
     font-size: clamp(0.8rem,10vw,1.2rem);
     text-align: center;
     white-space: nowrap; /*prevents the text from breaking into multiple lines*/
-
     /*This will  create the line that separates the Title and the value*/
     border-bottom: 2px solid black;
     padding-bottom: 4px; /*This adds space between the line and the title*/
@@ -149,15 +148,16 @@ select{
 }
 
 .Calc-Top-Box{
-    display:flex;                
-    align-items:center; 
-    background-color: #BFBDBD;
+    display:flex; 
+    flex-direction: column;               
+    background-color: #D9D9D9;
     display: flex;
     margin-top: 20px;
     margin-right: 20px;
     height: clamp(3px,140px,170px);
     border-radius: 10px;
     border: 5px solid black;
+    padding-right: 20px;
 }
 
 .Calculation-Display{
@@ -165,8 +165,18 @@ select{
     text-align: right;
     background: transparent;
     border: none;
-    font-family: "Orbitron", monospace;
+    font-family: Kode Mono,monospace;
     font-size: 4rem;
+    overflow: hidden;
+    font: bolder;
+    font-weight: 700;
+}
+
+.Backspace-Button{
+    background: transparent;
+    border: transparent;
+    margin-left: auto;
+    filter: invert(60%) brightness(80%);
 }
 
 .Calc-Middle-Options{

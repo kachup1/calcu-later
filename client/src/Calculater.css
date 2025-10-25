@@ -85,7 +85,61 @@ select{
     margin: 30px;
     width: clamp(200px,27vw,280px);
     border-radius: 20px;
+    display:grid;
+    grid-auto-rows: minmax(80px, auto);
+    gap: 12px;
+     padding: 16px;/*This adds padding to the grey container, meaning it gives more grey container to make it seem bigger */
+    overflow: hidden;
 }
+
+
+.Hex-Option,.Dec-Option,.Bin-Option,.Oct-Option{
+    background-color: white;
+    border-radius:10px ;
+    
+    width: clamp(100px,20vw,250px);
+    position: relative;
+    
+}
+.Option-Title{
+    font-family: Kode Mono,monospace;
+    font-weight: bold;
+    font-size: clamp(0.8rem,10vw,1.2rem);
+    text-align: center;
+    white-space: nowrap; /*prevents the text from breaking into multiple lines*/
+
+    /*This will  create the line that separates the Title and the value*/
+    border-bottom: 2px solid black;
+    padding-bottom: 4px; /*This adds space between the line and the title*/
+    margin-bottom: 6px; /*This adds space between the line and the value*/
+}
+
+.Hex-Value,.Dec-Value,.Oct-Value,.Bin-Value{
+    font-family: Kode Mono,monospace;
+   font-size: clamp(.9rem,10vw,1.5rem);
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.Hex-Option{
+    background-color: #4369F1;
+
+}
+
+.Dec-Option{
+    background-color: #AA0808;
+
+}
+.Oct-Option{
+    background-color: #A6EB05;
+
+}
+.Bin-Option{
+    background-color: #EF9309;
+
+}
+
 
 .Calc-Right-Side{
     display: flex;

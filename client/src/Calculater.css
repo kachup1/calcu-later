@@ -88,37 +88,50 @@ select{
     display:grid;
     grid-auto-rows: minmax(80px, auto);
     gap: 12px;
-     padding: 16px;/*This adds padding to the grey container, meaning it gives more grey container to make it seem bigger */
+    padding-top: 16px;
+    padding-bottom: 16px;
+     /*This adds padding to the grey container, meaning it gives more grey container to make it seem bigger */
     overflow: hidden;
+    justify-items: center;
+    border: 5px solid black;
+ 
 }
 
 
 .Hex-Option,.Dec-Option,.Bin-Option,.Oct-Option{
+    display: flex;
     background-color: white;
     border-radius:10px ;
-    
-    width: clamp(100px,20vw,250px);
+    border: 5px solid black;
+    width: clamp(100px,20vw,200px);
     position: relative;
-    
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start; /*I added this so that line under the title would be right below it. Without it, it would put the line at the bottom of the box.*/
 }
 .Option-Title{
     font-family: Kode Mono,monospace;
     font-weight: bold;
-    font-size: clamp(0.8rem,10vw,1.2rem);
+    font-size: clamp(.7rem,1.8vw,1.1rem);
     text-align: center;
-    white-space: nowrap; /*prevents the text from breaking into multiple lines*/
-    /*This will  create the line that separates the Title and the value*/
+   /*This will  create the line that separates the Title and the value*/
     border-bottom: 2px solid black;
-    padding-bottom: 4px; /*This adds space between the line and the title*/
-    margin-bottom: 6px; /*This adds space between the line and the value*/
+    width: 100%;
+   
+    
 }
 
 .Hex-Value,.Dec-Value,.Oct-Value,.Bin-Value{
     font-family: Kode Mono,monospace;
-   font-size: clamp(.9rem,10vw,1.5rem);
+   font-size: clamp(1rem,3vw,2rem);
     position: absolute;
     right: 5px;
     bottom: 5px;
+    /*I added this so it would resize if it overflows*/
+    white-space: normal;
+    overflow-wrap: anywhere;
+    line-height: 1;
+
 }
 
 .Hex-Option{

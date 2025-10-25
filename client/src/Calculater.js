@@ -60,7 +60,7 @@ function Calculater() {
     
         <div className='Bin-Option'>
           <div className='Option-Title'>Binary (BIN):</div>
-          <div className='Bin-Value'>1010101</div>
+          <div className='Bin-Value'>10101010101011011</div>
         </div>
 
       </div>
